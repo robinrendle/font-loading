@@ -86,7 +86,7 @@ This technique supports fonts from Google Fonts, Typekit, Fonts.com, and Fontdec
 
 ## Documentation and tutorials
 
-– [Official docs](https://github.com/typekit/webfontloader)
+- [Official docs](https://github.com/typekit/webfontloader)
 - [CSS-Tricks tutorial on the Web Font Loader](https://css-tricks.com/loading-web-fonts-with-the-web-font-loader/)
 
 
