@@ -22,7 +22,7 @@ In this instance we’re using the `async` attribute on the script so that it do
 This code can be added the `head` of the document. [Read more about preloading assets.](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
 ```html
-<link rel="preconnect" href="https://fonts.typonine.com/">
+<link rel="preconnect" href="https://fonts.typonine.com/" crossorigin>
 ```
 
 
