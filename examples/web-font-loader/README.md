@@ -8,31 +8,32 @@ This method is co-developed by Google and Typekit.
 ## Walkthrough
 
 ### 1. Add the Web Font Loader script to the page.
+
 In this instance we’re using the `async` attribute on the script so that it doesn’t block loading.
 
-```
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js" async></script>
 ```
 
 
 
 ### 2. Make the preconnect handshake to the font vendor of your choice.
-This code can be added the `head` of the document:
 
-```
+This code can be added the `head` of the document. [Read more about preloading assets.](https://css-tricks.com/prefetching-preloading-prebrowsing/)
+
+```html
 <link rel="preconnect" href="https://fonts.typonine.com/">
 ```
-
-[Read more about preloading assets.](https://css-tricks.com/prefetching-preloading-prebrowsing/)
 
 
 
 ### 3. Add settings to the `WebFontConfig` object.
+
 The `timeout` is entirely optional but makes sure that we’re not wasting the users time trying to download assets on a slow network.
 
 The `active` function here is entirely optional, however it gives us the option to set `sessionStorage` data.
 
-```
+```js
 WebFontConfig = {
   custom: {
     families: [
@@ -58,9 +59,10 @@ WebFontConfig = {
 
 
 ### 4. Check if fonts have already been cached.
+
 With the `active` event we set up we can now check in the `head` of the document if our fonts are already cached and change the classname just a little bit faster:
 
-```
+```html
 <head>
   <script>
     (function() {
@@ -78,10 +80,12 @@ With the `active` event we set up we can now check in the `head` of the document
 
 
 ## Support
+
 This technique supports fonts from Google Fonts, Typekit, Fonts.com, and Fontdeck, as well as self-hosted web fonts.
 
 
 ## Documentation and tutorials
+
 – [Official docs](https://github.com/typekit/webfontloader)
 - [CSS-Tricks tutorial on the Web Font Loader](https://css-tricks.com/loading-web-fonts-with-the-web-font-loader/)
 
