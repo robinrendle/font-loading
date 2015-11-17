@@ -1,6 +1,6 @@
 # Web Font Loader example
 
-This font loading technique uses the [Web Font Loader](https://github.com/typekit/webfontloader) which gives developers added control when using linked fonts via `@font-face`. We can add classes to the document after the font has been loaded and then use the Flash of Unstyled Text to let users get immediate access to the content.
+The [Web Font Loader](https://github.com/typekit/webfontloader) gives developers added control when using linked fonts via `@font-face`. We can use the Flash of Unstyled Text to give users immediate access to the content and then add classes to the document to show the new fonts once they’ve been loaded.
 
 This method is co-developed by Google and Typekit.
 
