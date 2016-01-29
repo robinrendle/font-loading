@@ -1,4 +1,4 @@
-# Web font loading
+# ❡ Web font loading
 
 These demos are designed to show the various differences between font loading techniques, but they’re certainly not designed to be the last port of call, so make sure to check the `readme` of each example for more information.
 
